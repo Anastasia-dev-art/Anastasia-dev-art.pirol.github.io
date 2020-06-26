@@ -1,0 +1,92 @@
+// main: ../style.less
+
+.port{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0 0 0;
+}
+
+.about__item-port{
+    margin: 190px 90px 100px 90px;
+}
+
+.port__item{
+    width: 50%;
+    position: relative;
+    background-color: #E9E9E9;
+
+    &.right{
+        background: url(../images/page3.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+}
+
+.about__port{
+    font-size: 38px;
+    color: @black;
+    margin-bottom: 25px;
+}
+
+.about__text-port{
+    font-size: 16px;
+    color: @gray;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.port__content{
+   margin-top: 50px;
+}
+
+.port__content-item{
+    padding-bottom: 8px;
+    color: @gray;
+
+    b{
+        color: @black;
+        padding-right: 4px;
+        font-weight: 700;
+    }
+}
+
+@media @tablet{
+    .about__item-port{
+        margin: 80px;
+    }
+}
+
+@media @tablet-sm{
+    .about__item-port{
+        margin: 40px;
+    }
+}
+
+@media @mobile{
+    .about__item-port{
+        margin: 20px;
+    }
+}
+
+@media @mobile-sm{
+    .port__item{
+      width: 100%;
+
+      &.right{
+        height: 240px;
+      }
+    }
+    .port{
+        display: flex;
+       flex-direction: column;
+    }
+}
+
+
+@media @iphohe{
+    .about__port{
+        font-size: 25px;
+        text-align: center;
+    }
+}

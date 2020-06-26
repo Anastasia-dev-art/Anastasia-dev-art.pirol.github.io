@@ -1,0 +1,109 @@
+// main: ../style.less
+
+.about{
+    display: flex;
+    margin: 100px 0;
+    flex-wrap: wrap;
+}
+
+.about__item{
+    text-align: center;
+}
+
+.about__title{
+    text-align: center;
+    color: @black;
+    font-size: 30px;
+    margin-bottom: 27px;
+}
+
+.about__text{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+
+
+//для страницы 2 
+
+.about__pagetwo{
+    margin-top: 133px;
+    margin-left: 80px;
+    color: @black;
+    font-size: 30px;
+    margin-bottom: 27px;
+}
+
+.about__text-pagetwo{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 34px;
+}
+
+.about__img-pagetwo{
+    margin-left: 80px;
+}
+
+
+
+@media @tablet {
+    .about__pagetwo{
+        margin-top: 50px;
+        margin-left: 40px;
+        font-size: 24px;
+        margin-bottom: 27px;
+    }
+    
+    .about__text-pagetwo{
+        width: 90%; 
+        margin-left: 40px;
+        padding-right: 30px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .about__img-pagetwo{
+        margin-left: 30px;
+    }
+}
+
+
+@media @mobile{
+    .about__pagetwo{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .about__text-pagetwo{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .about__img-pagetwo{
+        margin-left: 20px;
+    }
+}
+
+@media @mobile-sm{
+   
+    .about__img-pagetwo{
+        display: none;
+    }
+    .about__pagetwo{
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .about__text-pagetwo{
+      width: 100%;
+    }
+}

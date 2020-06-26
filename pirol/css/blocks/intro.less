@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.intro{
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-color: @bg;
+    display: flex;
+    position: relative;
+}
+
+.intro__inner{
+    width: 50%;
+    max-width: 680px;
+    float: right;
+    padding: 160px 100px 100px 100px;   
+}
+
+.intro__title{
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 24px;
+    color: @black;
+}
+
+.intro__subtitle{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 36px;
+    color: @gray;
+}
+
+
+
+@media @ipad{
+    .intro__inner{
+        width: 100%;
+        float: right;
+        padding: 160px 20px 100px 180px;  
+    }
+}
+
+
+@media @tablet{
+    .intro__inner{
+        width: 100%;
+        float: right;
+        padding: 160px 20px 100px 160px;  
+    }
+}
+
+@media @tablet-sm{
+    .intro__inner{
+        width: 100%;
+        float: right;
+        padding: 160px 20px 100px 190px;  
+    }
+}
+
+
+@media @mobile-sm{
+    .intro__title{
+        font-size: 27px;
+    }
+    .intro__subtitle{
+        font-size: 16px;
+    }
+}
+
+
+@media @samsung{
+    .intro__inner{
+        width: 100%;
+       padding: 180px 40px 100px 40px;
+    }
+}
+
+@media @iphohe{
+    .intro__inner{
+        width: 100%;
+       padding: 150px 20px 100px 20px;
+    }
+}

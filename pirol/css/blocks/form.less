@@ -1,0 +1,65 @@
+// main: ../style.less
+
+.section__form{
+    background-color: #F5F5F5;
+    padding: 100px 0;
+ 
+
+    &.white{
+        background-color: @white;
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.input{
+    margin: 5px 0 20px 0;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+}
+
+.textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+
+
+.top{
+    i{
+
+        margin-top: 50px;
+        font-size: 30px;
+        color: gray;
+        padding: 7px 9px;
+        border-radius: 50%;    
+        transition: background 0.2s linear;
+
+        &:hover{
+            background-color: fade(rgb(172, 172, 172), 20%) ;
+        }
+    }
+   
+}
+
+@media @samsung{
+.form{
+    max-width: 320px;
+}
+}
+@media @iphohe{
+    .form{
+        max-width: 270px;
+    }
+    }

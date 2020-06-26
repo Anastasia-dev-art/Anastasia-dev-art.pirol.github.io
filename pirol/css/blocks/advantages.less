@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.advantages{
+    display: flex;
+    padding: 90px 0;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+}
+
+.advantages__item{
+    width: 25%;
+    text-align: center;
+    padding: 0 40px 50px 40px;
+}
+
+.advantages__img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 12px;
+}
+
+.advantages___title{
+    font-size: 12px;
+    color: @black;
+    margin-bottom: 12px;
+}
+
+.advantages__text{
+    font-size: 16px;
+    color: @gray;
+}
+
+@media @tablet {
+    .advantages__item{
+        width: 50%;
+        padding: 0 20px 30px 20px;
+    }
+    .advantages__img{
+        width: 30px;
+        height: 30px;
+    }
+    .advantages__text{
+        font-size: 14px
+    }
+}
+
+
+@media @samsung{
+    .advantages__item{
+        width: 100%;
+        padding: 0 30px 20px 30px;
+    }
+    .advantages{
+        padding: 50px 0;
+    }
+    
+}

@@ -1,0 +1,26 @@
+// main: ../style.less
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 50px 0;
+    
+}
+
+@media @mobile{
+ .logo{
+     flex-direction: column;
+ }
+ .logo__item{
+     margin: 20px 0;
+ }
+}
+
+@media @tablet {
+    .logo{
+ margin: 20px 0;
+    }
+}
+

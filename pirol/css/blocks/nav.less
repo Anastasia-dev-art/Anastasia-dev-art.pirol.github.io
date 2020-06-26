@@ -1,0 +1,80 @@
+// main: ../style.less
+
+.header__nav{
+    display: flex;
+    font-size: 12px ;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.2s linear;
+
+    &.white{
+        color: @white;
+    }
+    
+    &:hover{
+        color: @aqua;
+    }
+
+    &.active{
+        color: @aqua;
+    }
+}
+
+
+.nav-toggle{
+    position: absolute;
+    align-items: center;
+    right: 10px;
+    z-index: 1;
+    padding: 5px 10px;
+    border: 0;
+    background: none;
+    margin: 0;
+    display: none;
+    outline: none;
+}
+
+.nav-toggle__item {
+    color: rgb(197, 197, 197);
+    font-size: 20px;
+    cursor: pointer;   
+}
+
+
+
+
+@media @tablet-sm{
+    .header__nav{
+        display: none;
+        width: 100%;
+        text-align: right;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: fade(#585858, 60%);
+        &.show {
+            display: flex;
+        }
+    }
+
+    .header__nav.active {
+        display: block;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav__link {
+        font-size: 22px;
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+}

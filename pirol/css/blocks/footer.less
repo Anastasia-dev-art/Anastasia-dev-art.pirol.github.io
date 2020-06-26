@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.footer{
+    background-color: @black;
+    padding: 95px 130px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title{
+    font-size: 18px;
+    margin-bottom: 22px;
+    color: @white;
+}
+
+.footer__text{
+    font-size: 15px;
+    color: #BCBCBC;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.contact__text{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #BCBCBC;
+}
+
+
+@media @tablet{
+    .footer{
+        padding: 75px 70px;
+    }
+}
+
+@media @tablet-sm{
+    .footer{
+        padding: 50px 20px;
+    }
+}
+
+@media @mobile{
+    .footer{
+        padding: 20px;
+    }
+    .footer__inner{
+      text-align: center;
+        flex-direction: column;
+    }
+    .footer__item{
+        margin-bottom: 20px;
+    }
+    
+}

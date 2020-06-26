@@ -1,0 +1,163 @@
+// main: ../style.less
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills__title {
+    font-size: 30px;
+    color: @black;
+    margin: 150px 0 30px 98px;
+}
+
+.skills__item {
+    width: 50%;
+    position: relative;
+
+    &.right {
+        background: url(../images/skills.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 570px;
+    }
+
+    &.left {
+        background: url(../images/about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 570px;
+    }
+}
+
+.skills__inner {
+    margin: 0 0 30px 98px;
+}
+
+.skill__title {
+    font-size: 12px;
+    color: @black;
+    margin-bottom: 17px;
+}
+
+.skill__progress {
+    height: 4px;
+    width: 500px;
+    background-color: #D8D8D8;
+}
+
+.skills__bar {
+    height: 100%;
+    background-color: @aqua;
+}
+
+
+@media @notebook {
+    .skills__title {
+        margin: 150px 0 30px 48px;
+    }
+
+    .skills__inner {
+        margin: 0 0 30px 48px;
+    }
+}
+
+
+@media @ipad {
+    .skills__title {
+        margin: 100px 0 30px 48px;
+    }
+
+    .skill__progress {
+        width: 400px;
+    }
+
+    .skills__item {
+        &.right {
+            height: 450px;
+        }
+        &.left {
+            height: 450px;
+        }
+    }
+
+}
+
+@media @tablet-sm {
+    .skills__title {
+        margin: 70px 0 30px 28px;
+    }
+
+    .skills__inner {
+        margin: 0 0 30px 28px;
+    }
+
+    .skill__progress {
+        width: 300px;
+    }
+
+    .skills__item {
+        &.right {
+            height: 400px;
+        }
+        &.left {
+            height: 400px;
+        }
+    }
+}
+
+@media @mobile {
+    .skills__title {
+        margin: 30px 0 30px 28px;
+    }
+
+    .skill__progress {
+        width: 270px;
+    }
+
+    .skills__item {
+        &.right {
+            height: 300px;
+        }
+        &.left {
+            height: 300px;
+        }
+    }
+}
+
+@media @mobile-sm {
+    .skills__title {
+        font-size: 25px;
+        margin: 25px 0 20px 18px;
+    }
+
+    .skills__item {
+        &.left {
+           display: none;
+        }
+    }
+    .skill__progress {
+        width: 350px;
+    }
+}
+
+@media @samsung{
+    .skills__item {
+        margin: 0 10px 20px 0px;
+        &.left {
+            display: none;
+         }
+    }
+    
+    .skill__progress {
+        width: 300px;
+    }
+}
+
+@media @iphohe{
+    .skill__progress {
+        width: 230px;
+    }
+}

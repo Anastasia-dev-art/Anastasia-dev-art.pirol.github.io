@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.statistic{
+    background-color: @aqua;
+}
+
+.stat{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stat__item{
+    padding: 80px 0;
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.stat__text{
+    font-size: 18px;
+    color: @white;
+    margin-bottom: 10px;
+}
+
+.stat__count{
+    font-size: 12px;
+    color: @white;
+}
+
+
+@media @tablet {
+    .stat__item{
+        padding: 40px 0 40px 50px;
+    }
+    .stat__text{
+        font-style: 12px;
+    }
+}
+
+@media @mobile-sm{
+    .stat__item{
+        padding: 20px 0 20px 20px;
+    }
+}
+
+@media @samsung{
+    .stat__text{
+        font-size: 14px;
+    }
+    .stat{
+       flex-direction: column;
+    }
+
+}
